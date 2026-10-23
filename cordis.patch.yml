@@ -1,0 +1,12 @@
+# Register the SCNet (超算互联网) provider without changing the profile's
+# current default model. The plugin reuses the SCNet desktop client's own
+# stored API key; no separate sign-in flow is started.
+#
+# The row `name` is the package specifier and must equal this package.json's
+# `name` verbatim: the host resolves the row through `nearestPackage`, which
+# compares the specifier against the nearest manifest. A mismatch is dropped
+# silently (no error, no log). This bundle is host-only (no `dsh.client`), so
+# there is no client card to lose here — but keep the names equal anyway.
+- insert:
+    - id: llm-scnet
+      name: dsh-connect-scnet

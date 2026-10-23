@@ -1,0 +1,58 @@
+{
+  "name": "dsh-connect-scnet",
+  "displayName": "DSH Connect SCNet",
+  "description": "把超算互联网（SCNet）计算服务客户端的模型接入 DeepSeek Harness：直接复用客户端已登录的 API key，无需二次配置。",
+  "version": "0.1.0",
+  "license": "MIT",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "scnet",
+    "model-provider"
+  ],
+  "type": "module",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "main": "index.js",
+  "icon": "./icon.svg",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hualuo520-h/dsh-connect-scnet.git"
+  },
+  "homepage": "https://github.com/hualuo520-h/dsh-connect-scnet#readme",
+  "bugs": {
+    "url": "https://github.com/hualuo520-h/dsh-connect-scnet/issues"
+  },
+  "author": "hualuo520-h",
+  "exports": {
+    ".": {
+      "default": "./index.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "models.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "scripts/gen-models.mjs"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=4.0.4 <5.0.0",
+    "@deepseek-ai/dsh-llm": ">=0.2.0-rc.0 <0.3",
+    "@deepseek-ai/dsh-llm-pi-ai": ">=0.2.0-rc.0 <0.3",
+    "@deepseek-ai/schemastery": ">=3.18.3 <4.0.0",
+    "@earendil-works/pi-ai": ">=0.85.0 <2.0.0"
+  }
+}

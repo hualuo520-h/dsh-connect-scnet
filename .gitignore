@@ -1,0 +1,8 @@
+node_modules/
+*.tgz
+package-lock.json
+.pnpm-store/
+.scnet-verify/
+*.log
+.DS_Store
+Thumbs.db

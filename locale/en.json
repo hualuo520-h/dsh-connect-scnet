@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "DSH Connect SCNet",
+    "description": "Connects the models of the SCNet (超算互联网) desktop client to DSH, reusing the API key the client already stored — no second sign-in."
+  }
+}
