@@ -2,7 +2,7 @@
   "name": "dsh-connect-scnet",
   "displayName": "DSH Connect SCNet",
   "description": "把超算互联网（SCNet）计算服务客户端的模型接入 DeepSeek Harness：直接复用客户端已登录的 API key，无需二次配置。",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "keywords": [
     "dsh-plugin",
@@ -50,8 +50,8 @@
   },
   "peerDependencies": {
     "@deepseek-ai/cordis": ">=4.0.4 <5.0.0",
-    "@deepseek-ai/dsh-llm": ">=0.2.0-rc.0 <0.3",
-    "@deepseek-ai/dsh-llm-pi-ai": ">=0.2.0-rc.0 <0.3",
+    "@deepseek-ai/dsh-llm": ">=0.2.0-rc.1 <0.3.0 || >=0.2.1-0 <0.3.0",
+    "@deepseek-ai/dsh-llm-pi-ai": ">=0.2.0-rc.1 <0.3.0 || >=0.2.1-0 <0.3.0",
     "@deepseek-ai/schemastery": ">=3.18.3 <4.0.0",
     "@earendil-works/pi-ai": ">=0.85.0 <2.0.0"
   }
